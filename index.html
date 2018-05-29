@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="welcome" class="info visible">
+    <h4>Fill information:</h4>
+    <form id="info" class="auth">
+        <input id="name" type="text" placeholder="Name">
+        <input id="email" type="email" placeholder="E-mail">
+    </form>
+    <div id="error"><p>Enter right information</p></div>
+    <h4>Select pattern:</h4>
+    <div class="patterns">
+        <div id="khaki" class="card khaki selected"></div>
+        <div id="green" class="card green"></div>
+        <div id="yellow" class="card yellow"></div>
+    </div>
+    <h4>Select level</h4>
+    <form id="level">
+        <input id="level1" name="level" value="12" type="radio" checked><label for="level1">12 cards</label><br>
+        <input id="level2" name="level" value="18" type="radio"><label for="level2">18 cards</label><br>
+        <input id="level3" name="level" value="24" type="radio"><label for="level3">24 cards</label><br>
+    </form>
+    <h3>Rules:</h3>
+    <p>When the game begins, all pictures are hidden.
+        Select two cards to try to match the pictures.
+        If you match the pictures, cards hide. If they don't match,
+        they turn. The player that finds all pairs wins!</p>
+    <button id="start" class="button"><p>Start game!</p></button>
+</div>
+<div id="congratulation" class="info">
+    <h2>Congratulate!</h2>
+    <h3 id="levelCongrat"></h3>
+    <h4>Your time is:</h4>
+    <h5 id="time"></h5>
+    <h3>Record table:</h3>
+    <div id="records"></div>
+    <button id="again" class="button"><p>Play again</p></button>
+</div>
+<div>
+    <p id="timer" class="timer"></p>
+    <div id="game">
+
+    </div>
+</div>
+    <script src="game_script.js"></script>
+</body>
+</html>

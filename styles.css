@@ -1,0 +1,195 @@
+body{
+    background: bisque;
+}
+
+.playground{
+    background: rgba(63, 64, 86, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.open{
+    transform: rotateY(180deg);
+}
+
+.grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
+
+.card,
+.back,
+.front {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.back,
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: khaki no-repeat center center / contain;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: white;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.match .front{
+    background: none !important;
+}
+
+.timer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#records p{
+    margin: 0;
+}
+
+.wrong {
+    background: rgba(217, 62, 61, 0.4);
+}
+
+.right {
+    background: rgba(87, 207, 87, 0.4);
+}
+
+#error {
+    color: red;
+    visibility: hidden;
+}
+
+#error p {
+    margin: 0;
+}
+
+.info {
+    border-radius: 20px;
+    background: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 20px;
+    z-index: 100;
+    visibility: hidden;
+}
+
+.button {
+    background: darkseagreen;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+.button p{
+    margin: auto;
+}
+
+.patterns {
+    display: flex;
+}
+
+.patterns div {
+    transition: none !important;
+}
+
+.selected {
+    border: 2px solid crimson;
+}
+
+.khaki {
+    background: khaki;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.cat {
+    background-image: url(img/1.png);
+}
+
+.rabbit {
+    background-image: url(img/2.png);
+}
+
+.wolf {
+    background-image: url(img/3.png);
+}
+
+.dog {
+    background-image: url(img/4.png);
+}
+
+.ladybug {
+    background-image: url(img/5.png);
+}
+
+.bull {
+    background-image: url(img/6.png);
+}
+
+.butterfly {
+    background-image: url(img/7.png);
+}
+
+.bird {
+    background-image: url(img/8.png);
+}
+
+.owl {
+    background-image: url(img/9.png);
+}
+
+.whale {
+    background-image: url(img/10.png);
+}
+
+.horse {
+    background-image: url(img/11.png);
+}
+
+.unicorn {
+    background-image: url(img/12.png);
+}
