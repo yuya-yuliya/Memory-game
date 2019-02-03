@@ -155,7 +155,7 @@ class RecordTable{
 
 function showCongratulate(level, userInfo) {
     document.getElementById("congratulation").classList.add("visible");
-    document.getElementById("nameCongrat").innerText = "Congratulations " + userInfo.name;
+    document.getElementById("nameCongrat").innerText = "Congratulations, " + userInfo.name + "!";
     document.getElementById("time").innerText = userInfo.seconds + " seconds";
     document.getElementById("levelCongrat").innerText = level + " cards";
 
